@@ -16,63 +16,360 @@
   <body>
 
     <div class="container-fluid">
-      <div class="row my-4">
-        <div class="col text-center">
-          <h2>Dr. Reyan's Online Care</h2>
+      <div class="row ">
+        <div class="col text-center bg-dark py-4">
+          <h2 class="text-light">Dr. Reyan's Online Care</h2>
         </div>
       </div>
       <hr class="my-0">
       
      <div class="container">
-        <div class="row">
+        <div class="row mt-3 mb-4">
             <div class="col">
                 <div>
 
-                    <form>
-                        <div class="form-row">
+                    <form class="mb-4">
+                        <div class=" form-row mb-2">
                           <div class="form-group col-md-6">
-                            <label class="font-weight-bold" for="inputEmail4">আপনার নাম কি?</label>
+                            <label class=" font-weight-bold" for="inputEmail4">আপনার নাম কি?</label>
                             <input type="text" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
                           </div>
                           <div class="form-group col-md-6 ">
-                            <label class="font-weight-bold" for="inputEmail4">আপনার বয়স কত ?</label>
+                            <label class="font-weight-bold " for="inputEmail4">আপনার বয়স কত ?</label>
                             <input type="text" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
                           </div>
                         </div>
-                        <div class="form-group">
-                          <label for="inputAddress">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                          <label for="inputAddress2">Address 2</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputState">State</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>Choose...</option>
-                              <option>...</option>
+                        <div class=" form-row mb-2">
+                            <div class="form-group col-md-6">
+                             <div>
+                                <label class="font-weight-bold " for="inputEmail4">আপনার লিঙ্গ?</label>
+                             </div>
+
+                            <select class="form-control">
+                            <option>নারী</option>
+                            <option>পুরুষ</option>
+                            <option>অন্যান্য</option>
                             </select>
+
+
+
+
+                              <!-- <div class="form-check-inline">
+                                <label class="form-check-label d-inline-block">
+                                  <input type="radio" class="form-check-input" name="optradio">নারী
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">পুরুষ
+                                </label>
+                              </div>
+                              <div class="form-check-inline">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">অন্যান্য
+                                </label>
+                              </div> -->
+                            </div>
+                            <div class="form-group col-md-6 ">
+                              <label class="font-weight-bold " for="inputEmail4">আপনার ওজন কত? ?</label>
+                              <input type="number" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                            </div>
                           </div>
-                          <div class="form-group col-md-2">
-                            <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
+
+
+                          <div class=" form-row mb-2">
+                            <div class="form-group col-md-6">
+                                <div>
+                                   <label class="font-weight-bold " for="inputEmail4">আপনার পেশা?</label>
+                                </div>
+
+                                <select class="form-control">
+                                    <option>চাকুরীজীবি</option>
+                                    <option>ব্যবসায়ী</option>
+                                    <option>গৃহিনী</option>
+                                    <option>শিক্ষার্থী</option>
+                                    <option>অবসরপ্রাপ্ত</option>
+                                    <option>অন্যান্য</option>
+                                  </select>
+
+                                 <!-- <div class="form-check-inline">
+                                   <label class="form-check-label d-inline-block">
+                                     <input type="radio" class="form-check-input" name="optradio">চাকুরীজীবি
+                                   </label>
+                                 </div>
+                                 <div class="form-check-inline">
+                                   <label class="form-check-label">
+                                     <input type="radio" class="form-check-input" name="optradio">ব্যবসায়ী
+                                   </label>
+                                 </div>
+                                 <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">গৃহিনী
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label d-inline-block">
+                                      <input type="radio" class="form-check-input" name="optradio">শিক্ষার্থী
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="optradio">অবসরপ্রাপ্ত
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                     <label class="form-check-label">
+                                       <input type="radio" class="form-check-input" name="optradio">অন্যান্য
+                                     </label>
+                                   </div> -->
+                                   
+                               </div>
+                               <div class="form-group col-md-6">
+                                <label class="font-weight-bold " for="inputEmail4">কোথায় বসবাস করেন?</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                              </div>
+                               
                           </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
+
+
+
+                          <div class=" form-row mb-2">
+                            
+                            <div class="form-group col-md-6">
+                                <div>
+                                   <label class="font-weight-bold " for="inputEmail4">আপনার সন্তান আছে কি?</label>
+                                </div>
+                                <select class="form-control">
+                                    <option>হ্যা</option>
+                                    <option>না</option>
+                                  </select>
+
+
+
+                                 <!-- <div class="form-check-inline py-1">
+                                   <label class="form-check-label d-inline-block">
+                                     <input type="radio" class="form-check-input" name="optradio">হ্যা
+                                   </label>
+                                 </div>
+                                 <div class="form-check-inline">
+                                    <label class="form-check-label d-inline-block">
+                                      <input type="radio" class="form-check-input" name="optradio">না
+                                    </label>
+                                  </div> -->
+                                
+                               </div>
+                               <div class="form-group col-md-6">
+                                <div>
+                                    <label class="font-weight-bold " for="inputEmail4">আপনি বর্তমানে কোন চিকিৎসক এর কাছে চিকিৎসা নিচ্ছেন?</label>
+                                </div>
+                                <select class="form-control">
+                                    <option>হ্যা</option>
+                                    <option>না</option>
+                                  </select>
+                                    <!-- <div class="form-check-inline">
+                                    <label class="form-check-label d-inline-block">
+                                        <input type="radio" class="form-check-input" name="optradio">হ্যা
+                                    </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                    <label class="form-check-label d-inline-block">
+                                        <input type="radio" class="form-check-input" name="optradio">না
+                                    </label>
+                                    </div> -->
+                                
+                                </div>
                           </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+
+
+
+                          <div class=" form-row mb-2">
+                            <div class="form-group col-md-6">
+                                <div>
+                                    <label class="font-weight-bold " for="inputEmail4">আপনি বর্তমানে কোন চিকিৎসক এর কাছে চিকিৎসা নিচ্ছেন?</label>
+                                </div>
+                                <select class="form-control">
+                                    <option>হ্যা</option>
+                                    <option>না</option>
+                                    <option>সঠিক জানা নেই</option>
+                                  </select>
+                                    <!-- <div class="form-check-inline">
+                                    <label class="form-check-label d-inline-block">
+                                        <input type="radio" class="form-check-input" name="optradio">হ্যা
+                                    </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                    <label class="form-check-label d-inline-block">
+                                        <input type="radio" class="form-check-input" name="optradio">না
+                                    </label>
+                                    </div> -->
+                                
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div>
+                                       <label class="font-weight-bold " for="inputEmail4">আপনার কি ডায়াবেটিস আছে?</label>
+                                    </div>
+                                    <select class="form-control">
+                                        <option>হ্যা</option>
+                                        <option>না</option>
+                                        <option>সঠিক জানা নেই</option>
+                                      </select>
+                                     <!-- <div class="form-check-inline">
+                                       <label class="form-check-label d-inline-block">
+                                         <input type="radio" class="form-check-input" name="optradio">হ্যা
+                                       </label>
+                                     </div>
+                                     <div class="form-check-inline">
+                                       <label class="form-check-label">
+                                         <input type="radio" class="form-check-input" name="optradio">না
+                                       </label>
+                                     </div>
+                                     <div class="form-check-inline">
+                                       <label class="form-check-label">
+                                         <input type="radio" class="form-check-input" name="optradio">সঠিক জানা নাই
+                                       </label>
+                                     </div> -->
+                                   </div>
+                          </div>
+
+
+
+                          <div class=" form-row mb-2">
+                              
+                            
+
+                            <div class="form-group col-md-6">
+                              <label class="font-weight-bold " for="inputEmail4">ডায়াবেটিস থাকলে কত দিন থেকে?</label>
+                              <input type="number" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                            </div>
+
+                            <div class="form-group col-md-6 ">
+                                <label class="font-weight-bold " for="inputEmail4">ডায়াবেটিস থাকলে কি কি ওষুধ নিচ্ছেন?</label>
+                                <input type="number" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                              </div>
+                          </div>
+
+
+
+                          <div class=" form-row mb-2">
+                            <div class="form-group col-md-6">
+                              <label class="font-weight-bold " for="inputEmail4">আপনার কি হাই প্রেশার এর সমস্যা আছে? থাকলে কতদিন / বছর ধরে?</label>
+                              <input type="text" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                            </div>
+                            <div class="form-group col-md-6 ">
+                              <label class="font-weight-bold " for="inputEmail4">হাই প্রেশার থাকলে তার জন্যে কি ওষুধ খাচ্ছেন?</label>
+                              <input type="text" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                            </div>
+                          </div>
+                          <div class=" form-row mb-2">
+                            <div class="form-group col-md-12 ">
+                                <label class="font-weight-bold " for="inputEmail4">আপনার বর্তমানে প্রেশার এবং পালস মেপে লিখুন ( নিকটবর্তি স্বাস্থকর্মী বা ফার্মেসি হতে)</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="আপনার উত্তর লিখুন">
+                              </div>
+                          </div>
+                         
+
+                          <div class=" form-row mb-2">
+                            <div class="form-group">
+                                <label class="font-weight-bold " for="inputAddress">আপনার অন্য কোন অসুখ/ রোগ( থাইরয়েড, ক্যান্সার ইত্যাদি)/ অপারেশন ( গলব্লাডার, থাইরয়েড, ইত্যাদি) হয়েছে কি?</label>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1">
+                                  <label class="form-check-label" for="inlineCheckbox1">
+                                    হার্ট এটাক
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2">
+                                    <label class="form-check-label" for="inlineCheckbox2">
+                                        হার্ট ফেইলুর
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3">
+                                    <label class="form-check-label" for="inlineCheckbox3">
+                                        ভালভের সমস্যা
+                                    </label>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class=" form-row mb-2">
+                            <div class="form-group">
+                                <label class="font-weight-bold " for="inputAddress">আপনার কি পূর্বে এঞ্জিওগ্রাম, বা রিং লাগানো কিংবা বাইপাস অথবা ভাল্ভের কোন অপারেশন হয়েছে?</label>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="12">
+                                  <label class="form-check-label" for="12">
+                                    এঞ্জিওগ্রাম
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="13">
+                                    <label class="form-check-label" for="13">
+                                        রিং
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="14">
+                                    <label class="form-check-label" for="14">
+                                        বাইপাস
+                                    </label>
+                                  </div>
+    
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="15">
+                                    <label class="form-check-label" for="15">
+                                        ভালভের অপারেশন
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="16">
+                                      <label class="form-check-label" for="16">
+                                        পেস মেকার বা এ আই সি ডি
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="17">
+                                      <label class="form-check-label" for="17">
+                                        অন্যান্য
+                                      </label>
+                                    </div>
+                              </div>
+    
+                          </div>
+
+                          <div class=" form-row mb-2">
+                            <div class="form-group">
+                                <label class="font-weight-bold " for="inputAddress">আমাদের কাছে আপনি কি সেবা প্রত্যাশা করছেন?</label>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="22">
+                                  <label class="form-check-label" for="22">
+                                    নিয়মিত চিকিৎসাধীন থাকতে ইচ্ছুক
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="13">
+                                    <label class="form-check-label" for="23">
+                                        বিশেষজ্ঞ মতামত চাই
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="24">
+                                    <label class="form-check-label" for="24">
+                                        বর্তমান সমস্যার সমাধান পেতে ইচ্ছুক
+                                    </label>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class=" form-row mb-2 ">
+                            <label class="font-weight-bold " for="inputAddress2">এই মুহুর্তে আপনার ৩ টি প্রধান সমস্যা কি কি?</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="আপনার উত্তর লিখুন">
+                          </div>
+
+                          <div class=" form-row mt-4 ">
+                            <button type="submit" class="btn btn-primary">জমা দিন</button>
+                          </div>
+                         
+                       
                       </form>
                     
                 </div>
@@ -90,68 +387,6 @@
 
 
 
-   
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-                
-                <div class="row">
-                    <div class="col">
-                        <table class="table table-bordered">
-                            <thead class="thead-light ">
-                              <tr>
-                               
-                                <th scope="col">Product</th>
-                                <th scope="col">Seller</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Price</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Sunglass</td>
-                                <td>Eshrak Adib</td>
-                                <td>1</td>
-                                <td>3000</td>
-                                
-                              </tr>
-                              <tr>
-                                <td>Sunglass</td>
-                                <td>Eshrak Adib</td>
-                                <td>1</td>
-                                <td>3000</td>
-                                
-                              </tr>
-                            
-                              
-                            </tbody>
-                          </table>
-                    </div>
-                   
-                </div>
-                <!-- <div class="row">
-                    <div class="col text-right">
-                        <a href="#" class="btn btn-outline-dark px-4">Clear</a>
-                        <a href="#" class="btn btn-success mx-2 px-4">Apply</a>
-                    </div>
-                </div> -->
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-        </div>
-        </div>
-    </div>
-
     
 
     <!-- Optional JavaScript -->
@@ -162,4 +397,7 @@
   </body>
 </html>
 
-
+<style>
+   
+  
+</style>
