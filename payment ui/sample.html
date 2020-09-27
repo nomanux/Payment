@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../payment ui/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12">
+              <div class="card mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">Product</h5>
+                  <hr>
+  
+  
+                  <!-- <div class="clearfix">
+                    <span class="float-left">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text border-right-white" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" placeholder="Search product" >
+                      </div>
+                  </span>
+                    <span class="float-right "><button class="btn btn-sm btn-primary pr-3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus ml-2" aria-hidden="true"></i> &nbsp; Add new product</button></span>
+                  </div> -->
+
+                  <div class="row mb-xs-3">
+                    <div class="col-md-6 ">
+                        <div class="input-group mb-3 w-md-50 ml-auto">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text border-right-white" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            </div>
+                            <input type="text" class="form-control form-control-sm dropdown-toggle" placeholder="Search product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          </div>
+                    </div>
+
+                    <input type="text" class="form-control form-control-sm dropdown-toggle" placeholder="Search product" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
+
+                          <div class="dropdown-menu ex3" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button"><div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                              </div>
+                            </button>
+                            <button class="dropdown-item" type="button"><div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                          </button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                          </div>
+
+
+
+
+
+
+
+
+                    <div class="col-md-6 text-md-right">
+                        <button class="btn btn-sm btn-primary pr-3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus ml-2" aria-hidden="true"></i> &nbsp; Add new product</button>
+                    </div>
+                </div>
+  
+  
+  
+                </div>
+              </div>
+            </div>
+        </div>
+  
+  
+  
+        <!-- Modal -->
+      <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <div class="bg-alert-mod text-center py-3 px-3 rounded">
+                            <form>
+                                <div class="form-group row mb-0">
+                                  <label for="inputPassword" class="col-sm-4 col-form-label font-weight-bold">Product Catagory</label>
+                                  <div class="col-sm-8 pt-1">
+                                    <select class="form-control form-control-sm " id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                    
+                                  </div>
+                                </div>
+                              </form>
+                          </div>
+                    </div>
+                </div>
+                <hr >
+              <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label >Product name</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Ex. Salt">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label >Product SKU</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Ex. Salt">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Expairy Date</label>
+                              <input type="date" class="form-control form-control-sm">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label >Approve Status</label>
+                              <select class="form-control form-control-sm">
+                                <option>Small select</option>
+                                <option>Small select</option>
+                                <option>Small select</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label >Product Details</label>
+                              <textarea class="form-control form-control-sm" rows="3"></textarea>
+                            </div>
+                            
+                          </div>
+                        
+                      </form>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <img src="./salt.jpg" alt="..." class="img-thumbnail">
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-sm  btn-outline-info"><i class="fa fa-upload" aria-hidden="true"></i> Upload photo</button>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary px-4">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
