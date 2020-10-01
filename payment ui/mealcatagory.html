@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../payment ui/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <div class="container-fluid">
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="sample.html">
+                    <i class="fa fa-home fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+              
+            </li>
+            <li class="has-subnav">
+                <a href="#">
+                    <i class="fa fa-table fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Food item type
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="">
+                   <i class="fa fa-list-ol fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Add food items
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="mealcatagory.html">
+                   <i class="fa fa-sitemap fa-lg h-5vh fa_mod "></i>
+                    <span class="nav-text">
+                        Meal category
+                    </span>
+                </a>
+               
+            </li>
+            <li>
+                <a href="createmeal.html">
+                    <i class="fa fa-cutlery fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Add meal
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-briefcase fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Stock
+                    </span>
+                </a>
+            </li>
+            <li>
+               <a href="#">
+                   <i class="fa fa-bed fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        IPD Request
+                    </span>
+                </a>
+            </li>
+            <li>
+               <a href="#">
+                    <i class="fa fa-credit-card-alt fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        POS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   <i class="fa fa-info fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Customer
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="logout">
+            <li>
+               <a href="#">
+                     <i class="fa fa-power-off fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>  
+        </ul>
+    </nav>
+      
+    <div class="row ml-4 pl-3">
+      <div class="col-12">
+          
+        <div class="mt-4">
+            <div class="">
+              <div class="bg-alert-mod text-center  py-2 px-3 rounded">
+                <h4 class="card-title font-weight-bold  mb-0">
+                  Meal Category
+                </h4>
+              </div>
+
+              <hr />
+
+              <div class="row mb-xs-3">
+                <div class="col-md-6">
+                  <div class="input-group mb-3 w-md-50">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text border-right-white"
+                        id="basic-addon1"
+                        ><i class="fa fa-search" aria-hidden="true"></i
+                      ></span>
+                    </div>
+                    <input
+                      v-model="searchQuery"
+                      type="text"
+                      class="form-control "
+                      placeholder="Search category"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 text-md-right">
+                  <button
+                    class="btn  btn-primary pr-3"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    @click="ModalButtonTextHandeler('Save')"
+                  >
+                    <i class="fa fa-plus ml-2 mr-1" aria-hidden="true"></i>
+                    Add Category
+                  </button>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-bordered table-sm">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col" class="w-6">SL</th>
+                      <th scope="col" style="width:25%">Category Name</th>
+                      <th scope="col" style="width:10%"> Price </th>
+                      <th scope="col">Description</th>
+                      <th scope="col" class="w-12">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(catagory, index) in resultQuery" :key="index">
+                      <td>1</td>
+                      <td>{{ catagory.CategoryName }}</td>
+                      <td> {{ catagory.Price }} </td>
+                      <td>{{ catagory.Description_ }}</td>
+                      <td align="center">
+                        <div
+                          class="btn-group mr-2 mb-2 "
+                          role="group"
+                          aria-label="Second group"
+                        >
+                          <button
+                            class="btn btn-sm btn-success "
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                            @click="TableEntry(catagory)"
+                          >
+                            <i class="fa fa-edit px-1"></i>
+                          </button>
+                        </div>
+
+                        <div
+                          class="btn-group  mb-2"
+                          role="group"
+                          aria-label="Second group"
+                        >
+                          <button
+                            class="btn btn-sm btn-danger"
+                            data-toggle="modal"
+                            data-target="#deletemodal"
+                            @click="SelectedToDelete(catagory)"
+                          >
+                            <i class="fa fa-trash px-1"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          
+          </div>
+      </div>
+    </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title font-weight-bold text-white">
+                Category Details
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" class="text-light">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- <div class="row">
+                <div class="col">
+                  <div class="bg-alert-mod text-center py-3 px-3 rounded">
+                    <form>
+                      <div class="form-group row mb-0">
+                        <label
+                          for="inputPassword"
+                          class="col-sm-4 col-form-label font-weight-bold"
+                          >Item Catagory</label
+                        >
+                        <div class="col-sm-8 pt-1">
+                          <select
+                            class="form-control form-control-sm "
+                            id="exampleFormControlSelect1"
+                          >
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <hr /> -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <form>
+                    <div class="form-group ">
+                      <label>Category Name</label>
+                      <input
+                        v-model="CategoryName"
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex. Soft Meal"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Category Price</label>
+                      <input
+                        v-model="CategoryPrice"
+                        type="number" min="0"
+                        class="form-control form-control-sm"
+                        placeholder="Ex. Soft Meal"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea
+                        v-model="CategoryDesc"
+                        class="form-control form-control-sm"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <!-- <div class="col-sm-12 col-md-3">
+                  <img
+                    src="../../assets/image/salt.png"
+                    alt="..."
+                    class="img-thumbnail"
+                  />
+                  <div class="text-center mt-3">
+                    <button type="button" class="btn btn-sm  btn-outline-info">
+                      <i class="fa fa-upload" aria-hidden="true"></i> Upload
+                      photo
+                    </button>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-sm btn-primary px-4"
+                data-dismiss="modal"
+                @click="CreateOrUpdateCategory()"
+              >
+                {{ ModelButton }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Delete Modal -->
+      <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Delete</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Want to Delete ?</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+                @click="ConfirmDeleteMealCategory()"
+              >
+                Yes
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
