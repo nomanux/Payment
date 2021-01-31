@@ -1,5 +1,64 @@
 
 
+.table .thead-dark th {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.bg-info {
+  background-color: #17a2b8 !important;
+}
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+
+.panel-title > a {
+  display: block;
+  position: relative;
+}
+.panel-title > a:after {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+}
+.panel-title > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+
+
+
+
+/* Bootstrap 3 text input with search icon */
+
+.has-search .form-control-feedback {
+  right: initial;
+  left: 0;
+  color: #ccc;
+}
+
+.has-search .form-control {
+  padding-right: 12px;
+  padding-left: 34px;
+}
+
+
 /* bs-sizing.css v1 */
 .w-1{width:1%!important}
 .w-2{width:2%!important}

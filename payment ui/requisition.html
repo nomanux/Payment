@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../payment ui/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <div class="container-fluid">
+    
+      
+    <div class="row">
+      <div class="col-md-12">
+     
+              <div class="bg-alert-mod text-center  py-1 px-3 rounded">
+                <h4 class="card-title font-weight-bold ">
+                  Requisition
+                </h4>
+              </div>
+
+              <div class="row mt-3">
+               <form>
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <select class="form-control form-control-sm">
+                      <option selected>Select department</option>
+                      <option>Neuro</option>
+                      <option>Gastro</option>
+                      <option>Cardiac</option>
+                    
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-2">
+
+                 <div class="form-group">
+                  <select class="form-control form-control-sm">
+                    <option selected>Select ward</option>
+                      <option>A-81</option>
+                      <option>A-82</option>
+                      <option>A-83</option>
+                      <option>A-84</option>
+                      <option>A-85</option>
+                      <option>A-86</option>
+                      <option>A-87</option>
+                      <option>A-88</option>
+                      <option>A-89</option>
+                    </select>
+                 </div>
+                  
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <input type="date" class="form-control form-control-sm">
+                  </div>
+                
+                 
+                </div>
+
+               </form>
+               
+
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>SL</th>
+                          <th>Bed No.</th>
+                          <th>Admission ID</th>
+                          <th>Patient Name</th>
+                          <th>Meal type</th>
+                          <th>Select meal time</th>
+                          <th>Item list </th>
+                          <th>Instruction</th>
+                          <th>Delivery status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>123-Bed 1</td>
+                          <td>PG23456</td>
+                          <td>Md Abdul Aziz</td>
+                          <td>
+                            <div class="panel-group" id="accordionmealtype" role="tablist" aria-multiselectable="true">
+                              <div class="panel panel-default">
+                                <div class="panel-heading py-2" role="tab" id="headingOne">
+                                  <h4 class="panel-title">
+                                    <a class="py-1" role="button" data-toggle="collapse" data-parent="#accordionmealtype" href="#collapsmealtype" aria-expanded="true" aria-controls="collapsmealtype">
+                                      View Meal List
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapsmealtype" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                  <div class="panel-body p-3">
+                                    <ul class="">
+                                      <li >First item</li>
+                                      <li>Second item</li>
+                                      <li>Third item</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                       </td>
+                           
+                          <td>
+                            <select class="form-control form-control-sm">
+                              <option>Please Select</option>
+                              <option>Breakfast</option>
+                              <option>Lunch</option>
+                            
+                            </select>
+                          </td>
+                          <td>
+  
+                            <div>
+  
+  
+                              <div class="panel-group mb-0" id="accordionmain" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading py-2" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                      <a class="py-1" role="button" data-toggle="collapse" data-parent="#accordionmain" href="#collapsemain" aria-expanded="true" aria-controls="collapsemain">
+                                        Edit Item
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapsemain" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body p-2">
+                                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Breakfast
+                                                <span> </span>
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body py-3">
+                                              <div class="row">
+                                                <div class="col-md-12" style="width: 250px;">
+                                                  
+                                                  <div class="row mb-3">
+                                                    <div class="col-xs-8">
+                                                      <select class="form-control form-control-sm">
+                                                          <option>Regular Breaksat</option>
+                                                          <option>Regular Lunch</option>
+                                                          <option>Regular Dinner</option>
+                                                          <option>Dental Soft</option>
+                                                          <option>Regular Breaksat</option>
+                                                          <option>Regular Lunch</option>
+                                                          <option>Regular Dinner</option>
+                                                          <option>Dental Soft</option>
+                                                        </select>
+                                                      
+          
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Additem"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Add new</button>
+          
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+              
+                                              <div class="row">
+                                                  <div class="col-md-12" style="width: 250px;">
+                                                    <button type="button" class="btn btn-sm btn-primary mr-2 mb-2">
+                                                      White Rice <span class="badge badge-light ml-2 px-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-primary mr-2 mb-2">
+                                                      Dal <span class="badge badge-light ml-2 px-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-primary mr-2 mb-2">
+                                                      Fish <span class="badge badge-light ml-2 px-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                                    </button> 
+                                                    <button type="button" class="btn btn-sm btn-primary mr-2 mb-2">
+                                                      Boiled Egg <span class="badge badge-light ml-2 px-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                                                    </button>
+                                                    
+                                                  </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Lunch
+                                               <span></span>
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                              lunch details
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Dinner
+                                                <span></span>
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                              Dinner
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+  
+  
+                              
+                              
+                                </div>
+  
+                          </td>
+                          <td>
+                            <textarea class="form-control" rows="2"></textarea></td>
+                          <td><a href="#">Request</a></td>
+                          <td><button type="button" class="btn btn-sm btn-primary">Receive</button></td>
+                        </tr>
+                        
+                       
+                      </tbody>
+                    </table>
+                  </div>
+                
+                </div>
+              </div>
+
+      </div>
+    </div>
+
+ <!--Add Modal -->
+ <div
+ class="modal fade"
+ id="Addmeal"
+ tabindex="-1"
+ role="dialog"
+ aria-labelledby="AddModalLabel"
+ aria-hidden="true"
+>
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title font-weight-bold text-white">
+        Add New Meal
+      </h4>
+    </div>
+     <div class="modal-body">
+       <div class="row">
+         <div class="col-sm-12">
+           <form>
+             <div class="form-group">
+               <label>Meal Name</label>
+               <input
+                 type="text"
+                 class="form-control text-capitalize"
+               
+                 placeholder="Ex.Soft Breakfast"
+               />
+             </div>
+
+             <div class="form-group">
+              <label>Add Item</label>
+              <input
+                type="text"
+                class="form-control text-capitalize"
+              
+                placeholder="Boiled egg"
+              />
+              
+            </div>
+
+             <div class="form-group ">
+               <label>Select listed Item</label>
+               <select
+                 class="form-control form-control-sm "
+               >
+               <option selected>Select here</option>
+               <option >Rice</option>
+               <option>Boiled Egg</option>
+               <option>Dal</option>
+               <option>Milk</option>
+               <option>Bread</option>
+               <option>6</option>
+               </select>
+             </div>
+
+            
+           </form>
+         </div>
+       </div>
+     </div>
+     <div class="modal-footer">
+       <button
+         type="button"
+         class="btn btn-sm btn-outline-secondary"
+         data-dismiss="modal"
+       >
+         Close
+       </button>
+       <button
+         type="button"
+         class="btn btn-sm btn-primary px-4"
+         data-dismiss="modal"
+         @click="NewItemSave()"
+       >
+         Save
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+ <!--Add Modal -->
+ <div
+ class="modal fade"
+ id="Additem"
+ tabindex="-1"
+ role="dialog"
+ aria-labelledby="AddModalLabel"
+ aria-hidden="true"
+>
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+    <div class="modal-header bg-dark">
+      <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title font-weight-bold text-white">
+        Add New Item
+      </h4>
+    </div>
+     <div class="modal-body">
+       <div class="row">
+         <div class="col-sm-12">
+           <form>
+            
+            <div class="form-group">
+              <label>Item Name</label>
+              <input
+                type="text"
+                class="form-control text-capitalize"
+              
+                placeholder="Ex.Boiled Egg"
+              />
+            </div>
+
+            
+           </form>
+         </div>
+       </div>
+     </div>
+     <div class="modal-footer">
+       <button
+         type="button"
+         class="btn btn-sm btn-outline-secondary"
+         data-dismiss="modal"
+       >
+         Close
+       </button>
+       <button
+         type="button"
+         class="btn btn-sm btn-primary px-4"
+         data-dismiss="modal"
+         @click="NewItemSave()"
+       >
+         Save
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
+
+
+
+  </div>
+
+
+
+</body>
+</html>

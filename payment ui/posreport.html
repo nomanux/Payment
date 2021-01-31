@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../payment ui/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <div class="container-fluid">
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="../payment ui/sample.html">
+                    <i class="fa fa-home fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+              
+            </li>
+            <li class="has-subnav">
+                <a href="newitemtype.html">
+                    <i class="fa fa-table fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Food item type
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="newitem.html">
+                   <i class="fa fa-list-ol fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Add food items
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="mealcatagory.html">
+                   <i class="fa fa-sitemap fa-lg h-5vh fa_mod "></i>
+                    <span class="nav-text">
+                        Meal category
+                    </span>
+                </a>
+               
+            </li>
+            <li>
+                <a href="createmeal.html">
+                    <i class="fa fa-cutlery fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Add meal
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="cafestock.html">
+                    <i class="fa fa-briefcase fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Stock
+                    </span>
+                </a>
+            </li>
+            <li>
+               <a href="ipdrequest.html">
+                   <i class="fa fa-bed fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        IPD Request
+                    </span>
+                </a>
+            </li>
+            <li>
+               <a href="pos.html">
+                    <i class="fa fa-credit-card-alt fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        POS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="customerlist.html">
+                   <i class="fa fa-info fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Customer
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="posreport.html">
+                   <i class="fa fa-file fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Report
+                    </span>
+                </a>
+            </li>
+            
+        </ul>
+
+        <ul class="logout">
+            <li>
+               <a href="#">
+                     <i class="fa fa-power-off fa-lg h-5vh fa_mod"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>  
+        </ul>
+    </nav>
+      
+    <div class="row ml-4 pl-3">
+      <div class="col-12">
+        <div class=" mt-4">
+            <div class="pt-3">
+              <div class="bg-alert-mod text-center  py-2 px-3 rounded">
+                <h4 class="card-title font-weight-bold  mb-0">
+                  Invoice Report
+                </h4>
+              </div>
+
+              <hr />
+
+              <div class="row mb-xs-3">
+                <div class="col-md-10">
+                  <div  class="form-inline">
+
+                     <div class="container-fluid">
+                         <div class="row">
+                             <div class="col-md-3 form-group border-right">
+                                  
+                                <select 
+                                v-model="SelectedCustomer"
+                                @change="CustomerChange()"
+                                 class="form-control form-control-sm w-100">
+                                
+                                <option select >All Customer</option>
+
+                                <option 
+                                v-for="customer in CustomerList"
+                                :key="customer.code"
+                                v-bind:value="customer.code"
+                                >
+                                {{ customer.name }}
+                                </option>
+
+                                </select>
+
+                            </div>
+                            
+                            <div class="col-md-3 form-group border-right">
+                                 <label class="mr-2">From</label>
+                                
+                                <input 
+                                v-model="From" 
+                                type="date" 
+                                class="form-control form-control-sm w-md-74 w-sm-100">
+                            </div>
+
+                            <div class="col-md-3 form-group">    
+                                 <label class="mr-2">To</label>                      
+                                <input 
+                                v-model="To" 
+                                type="date" 
+                                class="form-control form-control-sm w-md-74 w-sm-100">
+                            </div>
+                            
+                            <div class="col-md-3 form-group">    
+                                                     
+                                <button
+                                    @click="GetInvoices()"
+                                    class="btn btn-sm  btn-success w-60">
+                                    Apply
+                                </button> 
+
+                            </div>
+                             
+
+                         </div>
+                     </div>
+                  </div>
+                </div>
+
+              </div>
+              <hr />
+              <div class="row mb-xs-3 mt-md-3">
+                <div class="col-md-6">
+                
+                </div>
+                <div class="col-md-6 text-right">
+                  
+                  <button
+                    @click="PrintReport()"
+                    class="btn btn-sm  btn-primary pr-3 w-md-20 w-sm-100">
+
+                    <i class="fa fa-print ml-2 mr-1" aria-hidden="true"></i> &nbsp;
+                    Print
+                  </button>
+
+                </div>
+                
+              </div>
+
+              <div class="table-responsive mt-3">
+                <table class="table table-bordered table-sm">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col" class="w-6">SL</th>
+                      <th scope="col">Customer Name</th>
+                      <th scope="col">Invoice</th>
+                      <th scope="col">Amount (Tk)</th>
+                      <th scope="col">Date</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr v-for="(invoice,index) in InvoiceList" :key="index">
+                      <td> {{ index + 1 }}</td>
+                      <td> {{ invoice.CustomerName }}</td>
+                      <td> {{ invoice.InvoiceNo }}</td>
+                      <td> {{ invoice.Amount}} </td>
+                      <td> {{ invoice.Date }} </td>
+                      
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+      <!--New Modal -->
+      <div
+        class="modal fade"
+        id="Modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title font-weight-bold text-white">
+                Customer Details
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" class="text-light">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <form>
+                    <div class="form-group ">
+                      <label>Customer Name</label>
+                      <input
+                      
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Customer Name"
+                      />
+                    </div>
+                    <div class="form-group ">
+                      <label>Customer Type</label>
+                      <select 
+                       class="form-control form-control-sm">
+                        <option> Corporate Customer </option>
+                         <option> Hospital</option>
+                         <option> Doctor </option>
+                      </select>
+                    </div>
+
+                    <div> 
+
+                    <div class="form-group ">
+                      <label>Company Name</label>
+                      <input
+                       
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.Abc Company"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Address</label>
+                      <textarea
+                       
+                        type="text" 
+                        class="form-control form-control-sm"
+                        placeholder="Full Address Here"
+                        rows="2"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Contact Name</label>
+                      <input
+                       
+                        type="text" 
+                        class="form-control form-control-sm"
+                        placeholder="Contact Name"
+                      />
+                    </div>
+            
+                    <div class="form-group ">
+                      <label>Designation</label>
+                      <input
+                       
+                        type="text" 
+                        class="form-control form-control-sm"
+                        placeholder="Designation"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Email</label>
+                      <input
+                     
+                        type="text" 
+                        class="form-control form-control-sm"
+                        placeholder="Ex.Abc@gmail"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Mobile</label>
+                      <input
+                     
+                        type="number" min="0"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.01XXX"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>BankName</label>
+                      <input
+                      
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.Abc Bank"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Branch</label>
+                      <input
+                      
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.Dhanmondi Branch"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Accouont No</label>
+                      <input
+                   
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.1234567890"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>VAT ID</label>
+                      <input
+                      
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.1234567890"
+                      />
+                    </div>
+                    
+                    <div class="form-group ">
+                      <label>VAT Valid Till</label>
+                      <input
+                     
+                        type="date"
+                        class="form-control form-control-sm"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Tax ID</label>
+                      <input
+                      
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.1234567890"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Tax Valid Till</label>
+                      <input
+                      
+                        type="date"
+                        class="form-control form-control-sm"
+                      />
+                    </div>
+
+                    <div class="form-group ">
+                      <label>Trade License</label>
+                      <input
+                       
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Ex.1234567890"
+                      />
+                    </div>
+
+                    
+                  <div class="form-group ">
+                  
+                      <label>TradeLicense Valid Till</label>
+                      <input
+                       
+                        type="date"
+                        class="form-control form-control-sm"
+                      />
+                    </div>
+
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                data-dismiss="modal"
+                class="btn btn-sm btn-primary px-4"
+              
+              >
+               
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delete Modal -->
+      <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Delete</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Want to Delete ?</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+                @click="DeleteConfirm()"
+              >
+                Yes
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
