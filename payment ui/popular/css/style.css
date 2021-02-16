@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 *{
@@ -8,10 +8,14 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     }
 
-    .hname{
+    .times_new{
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .roboto_conden{
       font-family: 'Roboto Condensed', sans-serif;
     }
-    .heading{
+    .roboto_slab{
       font-family: 'Roboto Slab', serif;
     }
 
@@ -27,13 +31,121 @@
 
 
   .info > tbody > tr > td{
-    padding: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-left: 0rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+
+  .common_table > tbody > tr > td{
+    padding-right: 0.5rem !important;
+    padding-left: 0rem !important;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+  }
+
+  .info p {
+    margin-bottom: 0rem;
+    margin-bottom: 0rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .rough p {
+    margin-bottom: 0rem;
+    margin-bottom: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .rough > tbody > tr > td{
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+
+  .rough > thead > tr > th{
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
     border-top: 1px solid rgb(255, 255, 255);
   }
 
 
-  
 
+  .common_table p {
+    margin-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+
+
+  .text-lowercase {
+    text-transform: lowercase !important;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase !important;
+  }
+  
+  .text-capitalize {
+    text-transform: capitalize !important;
+  }
+  
+  .font-weight-light {
+    font-weight: 300 !important;
+  }
+  
+  .font-weight-lighter {
+    font-weight: lighter !important;
+  }
+  
+  .font-weight-normal {
+    font-weight: 400 !important;
+  }
+  
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+  
+  .font-weight-bolder {
+    font-weight: bolder !important;
+  }
+  
+  .font-italic {
+    font-style: italic !important;
+  }
+  
+  .td-top-white{
+    border-top: 1px solid white!important;
+  }
+  .thead_mod td:nth-child(1){
+    border-top: 1px solid white!important;
+  }
+  .thead_mod td:nth-child(2){
+    border-top: 1px solid white!important;
+  }
+  .thead_mod td:nth-child(3){
+    border-top: 1px solid white!important;
+  }
+  .thead_mod td:nth-child(4){
+    border-top: 1px solid white!important;
+  }
+  .thead_mod td:nth-child(5){
+    border-top: 1px solid white!important;
+  }
+  .thead_mod td:nth-child(6){
+    border-top: 1px solid white!important;
+  }
+
+
+  .upperline {
+    border-top: 2px solid rgb(56, 56, 56); 
+ }
+ .bt-off{
+  border-top: 1px solid white!important;
+ }
 
 
 
