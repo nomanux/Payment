@@ -5,25 +5,32 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <title>Hospital Bill</title>
+      <title>Rough Bill</title>
       <!-- Bootstrap -->
       <link href="css/bootstrap.css" rel="stylesheet"> 
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
-      <div class="container-fluid">
+      <div class="container-fluid px-0" style=" width: 595px;height: 842px;">
          <div class="row">
             <!-- <img src="./image/niramoy.png"  alt="Cinque Terre" width="30%" height="auto"> -->
-            <div class="col-md-12">
+            <div class="col-md-2 px-0">
+               <img src="./image/popular.png" class="img-thumbnail hospital-image pl-0"  alt="Cinque Terre">
+            </div>
+            <div class="col-md-8 px-0">
+               
                <div class="text-center" >
-                  <h3 class="text-success roboto_conden mt-1 mb-0">Popular Medical College Hospital</h3>
+                  <b><h4 class=" roboto_conden mt-1 mb-0">Popular Medical College Hospital</h4></b>
+                 <small>
                   <p class="mb-0">House # 25 Rd No. 2, Dhaka 1205</p>
                   <p class="mb-0">Phone: 02-9669301</p>
+                 </small>
                </div>
             </div>
+            <div class="col-md-2 px-0"></div>
          </div>
          <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 px-0">
                <div class="pt-1">
                   <h4 style="background-color:#e7ebf0;width: 20%;" class="text-center py-2 mt-0 mx-auto roboto_slab border border-secondary">
                   Rough Bill</h3>
@@ -31,7 +38,7 @@
                <table class="table rough mb-0 " style="font-size: 85%;">
                  
                   <tr>
-                     <td style="width: 15%;"><p>Patinet Name</p></td>
+                     <td style="width: 20%;"><p>Patinet Name</p></td>
                      <td colspan="3"><b >: MD Abdul Aziz</b></td>
                   </tr>
                   <tr>
@@ -53,11 +60,12 @@
                      <td colspan="2"><p class="text-right">Cabin No. <font>: 613</font></p> </td>
                   </tr>
                </table>
+               <hr style="border-bottom: 2px solid black!important;" class="my-1">
             </div>
          </div>
-         <hr style="border-bottom: 2px solid black!important;" class="my-1">
-         <div class="row">
-            <div class="col-md-12">
+         
+         <div class="row" style="font-size: 83%;">
+            <div class="col-md-12 px-0">
                <div>
                   <table class="table common_table">
                      <thead>
@@ -72,46 +80,48 @@
                         
                        <tr>
                          <td rowspan="3"><b><p>Consultancy:</p></b></td>
-                         <td>National Professor Brig. (Rtd) Abdul Malik</td>
+                         <td>Prof. A.T.M. Khalilur Rahman</td>
                          <td class="text-center">1500 x 12</td>
                          <td class="text-right">18000</td>
                        </tr>
                        <tr>
                         
-                        <td>National Professor Brig. (Rtd) Abdul Malik</td>
+                        <td>Prof. Dr. Mohammad Badiuzzaman</td>
                         <td class="text-center">1500 x 12</td>
                         <td class="text-right">18000</td>
                       </tr>
                       <tr>
-                        <td>National Professor Brig. (Rtd) Abdul Malik</td>
+                        <td>Prof. Dr. Mohammad Sharifuzzaman
+                        </td>
                         <td class="text-center">1500 x 12</td>
                         <td class="text-right">18000</td>
                       </tr>
                       <tr>
                         <td><b><p>Dressing Done:</p></b></td>
-                        <td>National Professor Brig. (Rtd) Abdul Malik</td>
+                        <td>Prof. Dr. Sohel Reza Choudhury</td>
                         <td class="text-center">1500 x 12</td>
                         <td class="text-right">18000</td>
                       </tr>
                       <tr>
                         <td><b><p>Echo Done:</p></b></td>
-                        <td>National Professor Brig. (Rtd) Abdul Malik</td>
+                        <td>Prof. Dr. Moonmoon Rahman</td>
                         <td class="text-center">1500 x 12</td>
                         <td class="text-right">18000</td>
                       </tr>
 
                       <tr>
                         <td><b><p>Echo Done</p></b></td>
-                        <td><b><p>National Professor Brig. (Rtd) Abdul Malik</p></b></td>
+                        <td><b><p>Dr. Jasimuddin Ahmed</p></b></td>
                         <td class="text-center"></td>
-                        <td class="text-right"><h4 class="my-0"><b>Paid</b></h4></td>
+                        <td  class="text-right single-bottom-border"><h4 class="my-0"><b>Paid</b></h4></td>
                       </tr>
 
 
                       <tr>
-                        <td colspan="2"><b><p class="text-right">Total Doctor's Bill</p></b></td>
                         <td class="text-center"></td>
-                        <td style="border-bottom: 2px solid black;"><b><p class="text-right">53000</p></b></td>
+                        <td><b><p class="text-right">Total Doctor's Bill</p></b></td>
+                        <td class="text-center"></td>
+                        <td class="double-bottom-border"><b><p style="font-size: 1.2em;" class="text-right">53000</p></b></td>
                       </tr>
                      </tbody>
                    </table>
@@ -120,41 +130,76 @@
                    
                      <tbody>
                        <tr>
-                         <td rowspan="3" style="width: 20%;"><b><p>Consultancy:</p></b></td>
-                         <td>National Professor Brig. (Rtd) Abdul Malik</td>
-                         <td class="text-center">1500 x 12</td>
-                         <td class="text-right">18000</td>
+                         <td rowspan="4" style="width: 20%;"><b><p>Hospital's Bill:</p></b></td>
+                         <td>O T Charge</td>
+                         <td class="text-center">2100 x 6</td>
+                         <td class="text-right">12600</td>
                        </tr>
                        <tr>
                         
-                        <td>National Professor Brig. (Rtd) Abdul Malik</td>
-                        <td class="text-center">1500 x 12</td>
-                        <td class="text-right">18000</td>
+                        <td>Nebulizer</td>
+                        <td class="text-center">7500 x 1</td>
+                        <td class="text-right">7500</td>
                       </tr>
                       <tr>
-                        <td>National Professor Brig. (Rtd) Abdul Malik</td>
-                        <td class="text-center">1500 x 12</td>
-                        <td class="text-right">18000</td>
+                        <td>RBS</td>
+                        <td class="text-center">150 x 20</td>
+                        <td class="text-right">3000</td>
+                      </tr>
+                      <tr>
+                        <td>Investigation</td>
+                        <td class="text-center">100 x 2</td>
+                        <td class="text-right">200</td>
                       </tr>
 
                       <tr>
-                        <td colspan="2"><b><p class="text-right">Total Hospital's Bill</p></b></td>
+                        <td></td>
+                        <td ><b><p class="text-right">Total Hospital's Bill</p></b></td>
                         <td class="text-center"></td>
-                        <td style="border-bottom: 2px solid black;width: 14%;"><b><p class="text-right">53000</p></b></td>
+                        <td class="double-bottom-border single-bottom-border" style="width: 15%;font-size: 1.2em;"><b><p class="text-right">53000</p></b></td>
                       </tr>
+
+                    
+
+
                       <tr>
-                        <td colspan="2"><b><p class="text-right">Total Bill</p></b>
-                           <b><p class="text-right">Advance</p></b>
+                         <td></td>
+                        <td><b><p class="text-right">Total Bill</p></b>
+                           <b><p class="text-right pt-1">Advance</p></b>
                         
                         </td>
                         <td class="text-center"></td>
-                        <td style="border-bottom: 2px solid black;width: 14%;" class="text-right"><h4 class="my-0"><b>74564564</b></h4>
-                           <b><p>4564564</p></b></td>
+                        <td style="width: 15%;" class="text-right double-bottom-border"><p class="my-0" style="font-size: 1.3em;"><b>64564</b></p>
+                           <b><p >4564564</p></b></td>
+                      </tr>
+                      <tr>
+                         <td></td>
+                         <td>
+                            <b><p class="text-right pt-2">Due's Amount</p></b>
+                         </td>
+                         <td class="text-center"></td>
+                         <td style="width: 15%;" class="text-right double-bottom-border"><p class="my-0" style="font-size: 1.3em;"><b>64564</b></p>
+                           </td>
+                      </tr>
+                      <tr>
+                         <td colspan="4">
+                           <b><p class="text-capitalize text-center pt-3">In Word: Taka Three Lac five thousand eight hundred seventy only</p></b>
+                         </td>
                       </tr>
                       
                      </tbody>
                    </table>
                </div>
+            </div>
+         </div>
+
+         <div class="row pt-3 mt-3" style="font-size: 85%;">
+            <div class="col-md-12 px-0">
+               <br>
+               <br>
+               <br>
+               <br>
+               <p class="text-uppercase upperline text-center pt-2 ml-auto w-25" >Accounts Officer</p>
             </div>
          </div>
 

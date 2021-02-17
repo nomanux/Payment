@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     /* font-family: 'Roboto', sans-serif; */
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
     }
 
     .times_new{
@@ -38,6 +38,36 @@
     border-top: 1px solid rgb(255, 255, 255);
   }
 
+  .info p {
+    margin-bottom: 0rem;
+    margin-bottom: 0rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+  .table_mod > tbody > tr > td{
+    padding-right: 0.5rem !important;
+    padding-left: 0rem !important;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+    border-top: 1px solid rgb(255, 255, 255);
+  }
+
+  .table_mod p {
+    margin-bottom: 0rem;
+    margin-bottom: 0rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+
+
+
+
+
+
   .common_table > tbody > tr > td{
     padding-right: 0.5rem !important;
     padding-left: 0rem !important;
@@ -45,11 +75,7 @@
     padding-bottom: 0.2rem !important;
   }
 
-  .info p {
-    margin-bottom: 0rem;
-    margin-bottom: 0rem;
-    font-family: 'Times New Roman', Times, serif;
-  }
+  
 
   .rough p {
     margin-bottom: 0rem;
@@ -145,6 +171,24 @@
  }
  .bt-off{
   border-top: 1px solid white!important;
+ }
+
+ .single-bottom-border{
+  border-bottom: 1px solid #000!important;
+}
+ .double-bottom-border{
+   border-bottom: 3px double #000!important;
+ }
+
+ .hospital-image{
+  height: 55px!important;
+  width: auto;
+  border: 1px solid #ffffff!important;
+ }
+
+ .r-input{
+   width: 20%;
+   height: 17px!important;
  }
 
 
