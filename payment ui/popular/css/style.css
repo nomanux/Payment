@@ -167,7 +167,7 @@
 
 
   .upperline {
-    border-top: 2px solid rgb(56, 56, 56); 
+    border-top: 1px solid rgb(56, 56, 56); 
  }
  .bt-off{
   border-top: 1px solid white!important;
@@ -189,8 +189,10 @@
  .r-input{
    width: 20%;
    height: 17px!important;
+   padding-left: 2.2rem;
+   padding-right: 2.2rem;
+   border: 1px solid #000000;
  }
-
 
 
 
