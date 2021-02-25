@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .roboto_slab{
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .table-sm-mod td, .table-sm-mod th{
+    padding: .07em;
+    border-top: none!important;
+  }
+
+  .table-graph td, .table-graph th{
+    padding: .7em;
+    border-top: none!important;
+  }
+
+
+
+  .mealtime{
+    color: #019e47!important;
+    font-family: 'Oswald', sans-serif;
+    
+  }
+
+  .vertical-hr {
+    margin-top: -8px;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    right: 10px;
+    background-color: black;
+   }
+
+   .vital_name{
+    font-family: 'Montserrat', sans-serif;
+   }
+   .gph_blue{
+    color: #00B0F0;
+   }
+   .gph_green{
+    color: #00B050;
+   }
+
+   .bcolor1{
+       border: 1px solid #01a78f!important;
+   }
+
+   .bcolor2{
+    border: 1px solid #0070ec!important;
+}
+
+.bcolor3{
+    border: 1px solid #e71123!important;
+}
+
+.bcolor4{
+    border: 1px solid #03ab00!important;
+}
+
+.bcolor5{
+    border: 1px solid #ffc700!important;
+}
+
+
+.bcolor6{
+    border: 1px solid #7209b7!important;
+}
+
+
+.bcolor7{
+    border: 1px solid #065a60!important;
+}
+
+
+.bcolor8{
+    border: 1px solid #01a78f!important;
+}
