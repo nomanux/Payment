@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid f-85">
+        <div class="row pt-2">
+           <div class="col-md-12">
+              <div class="card  ">
+                 <div class="card-header py-1">
+
+                    <div class="d-flex">
+                        <div class=" mr-auto" style="width: 30em;">
+                            <div class="input-group my-2">
+                                <input type="text" class="form-control form-control-sm" placeholder="Search Patient's Reg. No. / Phone No." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary btn-sm" type="button">Search</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="align-self-center" style="font-family: Arial, Helvetica, sans-serif;">
+                            <h5 class="mb-0">Total Visited Patient: <font class="font-weight-bold">200</font></h5>
+                        </div>
+                      </div>
+
+
+                   
+                 </div>
+                 <div class="card-body  table_container px-2 scroll_details scroll_board p-2 bg_mod">
+                    <div class="pt-2">
+                       <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                             <a class="nav-link active" id="immunizations" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Today <font class="font-weight-bold">(40)</font></a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Yesterday <font class="font-weight-bold">(40)</font></a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Last 7 days <font class="font-weight-bold">(40)</font></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="immunizations" data-toggle="tab" href="#success" role="tab" aria-controls="success" aria-selected="true">Last 30 days <font class="font-weight-bold">(40)</font></a>
+                         </li>
+                        
+                       </ul>
+
+                       <div class="tab-content bg-white" id="myTabContent">
+                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="immunizations">
+
+                             
+                          <div class="container-fluid">
+                             <div class="row">
+                                <div class="col-md-12">
+
+                                
+                               <div class="pt-2 mt-2 scroll_patient_list scroll_details">
+                                   <table class="table my_appointment_table  table-bordered table-sm">
+                                      <thead class="thead-light" >
+                                         <th style="width:5%;" class="text-center">
+                                           SL
+                                         </th>
+                                         <th class="font-weight-bold">
+                                            Patient Name
+                                         </th>
+                                         <th class="font-weight-bold text-center">
+                                            Patient Reg. No
+                                         </th>
+                                         <th class="font-weight-bold text-center">
+                                            Phone No
+                                         </th>
+                                         <th class="font-weight-bold text-center">
+                                            Gender
+                                         </th>
+                                         <th class="font-weight-bold text-center">
+                                            Age
+                                         </th>
+                                         <th class="font-weight-bold text-center">
+                                            Prescription
+                                         </th>
+
+                                         <th class="font-weight-bold text-center"> Action</th>
+                                      </thead>
+                                      <tbody>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d_name">
+                                              <p class="mb-0">Abdullah Al Noman</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                                <p class="mb-0">NHT4545</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">01682503304</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">Male</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">26</p>
+                                              </td>
+                                              <td class="d_name text-center">
+                                                <p class="mb-0">
+                                                        <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                                </p>
+                                              </td>
+                                            <td class="text-center">
+                                             <a href="#" class="text-success">Go to Prescription</a>
+                                            </td>
+                                         </tr>
+                                      </tbody>
+                                   </table>
+                                </div>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                      <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                             </div>
+                          </div>
+
+
+                          </div>
+                          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container-fluid">
+                             <div class="row">
+                                <div class="col-md-12">
+                                  
+                               <div class="pt-2 mt-2 scroll_patient_list scroll_details">
+                               <div class="table-responsive">
+                                <table class="table my_appointment_table  table-bordered table-sm">
+                                    <thead class="thead-light" >
+                                       <th style="width:5%;" class="text-center">
+                                         SL
+                                       </th>
+                                       <th class="font-weight-bold">
+                                          Patient Name
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Patient Reg. No
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Phone No
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Gender
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Age
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Prescription
+                                       </th>
+
+                                       <th class="font-weight-bold text-center"> Action</th>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="text-center">1</td>
+                                          <td class="d_name">
+                                            <p class="mb-0">Abdullah Al Noman</p>
+                                          </td>
+                                          <td class="d_name text-center">
+                                              <p class="mb-0">NHT4545</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">01682503304</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">Male</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">26</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">
+                                                      <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                              </p>
+                                            </td>
+                                          <td class="text-center">
+                                           <a href="#" class="text-success">Go to Prescription</a>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                               </div>
+                                </div>
+                                </div>
+                             </div>
+                          </div>
+                          </div>
+                          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                              <div class="container-fluid">
+                             <div class="row">
+                                <div class="col-md-12">
+                                  
+                               <div class="pt-2 mt-2 scroll_patient_list scroll_details">
+                               <div class="table-responsive">
+                                <table class="table my_appointment_table  table-bordered table-sm">
+                                    <thead class="thead-light" >
+                                       <th style="width:5%;" class="text-center">
+                                         SL
+                                       </th>
+                                       <th class="font-weight-bold">
+                                          Patient Name
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Patient Reg. No
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Phone No
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Gender
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Age
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Prescription
+                                       </th>
+
+                                       <th class="font-weight-bold text-center"> Action</th>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="text-center">1</td>
+                                          <td class="d_name">
+                                            <p class="mb-0">Abdullah Al Noman</p>
+                                          </td>
+                                          <td class="d_name text-center">
+                                              <p class="mb-0">NHT4545</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">01682503304</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">Male</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">26</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">
+                                                      <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                              </p>
+                                            </td>
+                                          <td class="text-center">
+                                           <a href="#" class="text-success">Go to Prescription</a>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                               </div>
+                                </div>
+                                </div>
+                             </div>
+                          </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="success" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="container-fluid">
+                           <div class="row">
+                              <div class="col-md-12">
+                                
+                             <div class="pt-2 mt-2 scroll_patient_list scroll_details">
+                            <div class="table-responsive">
+                                <table class="table my_appointment_table  table-bordered table-sm">
+                                    <thead class="thead-light" >
+                                       <th style="width:5%;" class="text-center">
+                                         SL
+                                       </th>
+                                       <th class="font-weight-bold">
+                                          Patient Name
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Patient Reg. No
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Phone No
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Gender
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Age
+                                       </th>
+                                       <th class="font-weight-bold text-center">
+                                          Prescription
+                                       </th>
+  
+                                       <th class="font-weight-bold text-center"> Action</th>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="text-center">1</td>
+                                          <td class="d_name">
+                                            <p class="mb-0">Abdullah Al Noman</p>
+                                          </td>
+                                          <td class="d_name text-center">
+                                              <p class="mb-0">NHT4545</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">01682503304</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">Male</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">26</p>
+                                            </td>
+                                            <td class="d_name text-center">
+                                              <p class="mb-0">
+                                                      <a href="#"><i class="fa fa-file-pdf-o mr-1" aria-hidden="true"></i>  View</a>
+                                              </p>
+                                            </td>
+                                          <td class="text-center">
+                                           <a href="#" class="text-success">Go to Prescription</a>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                            </div>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+
+
+             
+           </div>
+
+          
+        </div>
+         <div class="row">
+              <div class="col-md-12">
+                    <div
+               id="Immunizations"
+               class="modal fade"
+               tabindex="-1"
+               role="dialog"
+               aria-labelledby="familyMemberpldLabel"
+               aria-hidden="true">
+               <div
+                   class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                   role="document">
+                   <div class="modal-content">
+                   <div class="modal-header bg-light-primary">
+                       <h5 class="modal-title">Immunizations</h5>
+                       <button
+                       type="button button-round"
+                       class="close"
+                       data-dismiss="modal"
+                       aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                       </button>
+
+                   </div>
+
+                   <div class="modal-body">
+
+                        <div class="form-group">
+                          <label>Enter Immunizations Name</label>
+                          <input type="text" class="form-control form-control-sm" placeholder="Ex. Covid-19">
+                       </div>
+                      
+                     
+                     
+
+                      
+
+                    
+                      
+                    </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+      
+     </div>
+                     
+                   </div>
+               </div>
+               </div>
+
+                <div
+               id="deleteModal"
+               class="modal fade"
+               tabindex="-1"
+               role="dialog"
+               aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div
+                   class="modal-dialog"
+                   role="document">
+                   <div class="modal-content">
+                   <div class="modal-header">
+                       <h5
+                       id="exampleModalLabel"
+                       class="modal-title">Want to delete <b>{{ activeHealthValue }} ?</b></h5>
+                       <button
+                       type="button"
+                       class="close"
+                       data-dismiss="modal"
+                       aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                       </button>
+                   </div>
+                   <div class="modal-body">
+                       ...
+                   </div>
+                   <div class="modal-footer">
+                       <button
+                       type="button"
+                       class="btn btn-secondary"
+                       data-dismiss="modal">No</button>
+                       <button
+                       type="button"
+                       class="btn btn-primary"
+                       data-dismiss="modal"
+                       >Yes</button>
+                       
+                   </div>
+                   </div>
+               </div>
+               </div>
+              </div>
+           </div>
+     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<style>
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+   font-weight: bold!important;
+   /* border-color: #00aade #00aade #fff!important; */
+   }
+
+   .bg_mod{
+      background-color: #E3F1FC!important;
+  }
+
+  .f-85{
+	font-size: 85%!important;
+  }
+
+  .scroll_patient_list {
+      max-height: 400px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      }
+</style>
